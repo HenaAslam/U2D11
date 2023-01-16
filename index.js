@@ -19,8 +19,8 @@ const getPinkfloydSongs=()=>{
             let singleSong=songsObject[i];
             ulNode.innerHTML+=`  
             
-            <div class="col-6 col-md-3">
-            <div class="card">
+            <div class="col-6 col-md-3 ">
+            <div class="card" ">
             <img src="${singleSong.album.cover_medium}" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
               <p class="card-text">${singleSong.title}</p>
