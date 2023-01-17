@@ -23,7 +23,7 @@ const getSongs=(search,id)=>{
        
         for(let i=0;i<songsObject.length;i++){
             let singleSong=songsObject[i];
-            songs.push(singleSong)
+            songs.push(singleSong) //for the global variable
            
             place.innerHTML+=`  
             
@@ -94,48 +94,19 @@ songList();
 
 // function valuefunction(eventData){
 //     if(eventData.key==="Enter"){
-//       let val=document.getElementById("inp").value
-//     }
-//     return val
-//    }
+//         let val=document.getElementById("inp").value
+//       }
+//       return val
+// }
+// function searchResult(){
+//     let search=valuefunction();
+//     let id=document.getElementById('seachresult')
+//     getSongs(search,id)
+// }
 
 
-// function searchBar(){
+// searchResult();
 
-// search=valuefunction()
-// console.log(search)
 
       
-//         fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q="+search ,options)
-    
-//         .then((rawsongs)=>{
-//             return rawsongs.json()
-//         }).then((jsonSongs)=>{
-            
-//             let songsObject=jsonSongs.data
-//             console.log(songsObject)
-//             let place=document.getElementById("seachresult");
-           
-//             for(let i=0;i<songsObject.length;i++){
-//                 let singleSong=songsObject[i];
-              
-               
-//                 place.innerHTML+=`  
-                
-//                 <div class="col-6 col-md-3 mb-3 ">
-//                 <div class="card">
-//                 <img src="${singleSong.album.cover_medium}" class="card-img-top img-fluid" alt="...">
-                
-//                 <div class="card-body">
-//                   <p class="card-text">${singleSong.title}</p>
-//                 </div>
-               
-//                 </div>
-//               </div>`
-//             }
-    
-//         }).catch(err=>console.log(err))
-    
-    
-// }
-// searchBar();
+        
